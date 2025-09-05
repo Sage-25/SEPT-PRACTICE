@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drawer</title>
+
+  <link rel="stylesheet" href="../DRAWER/drawer-style.css">
+</head>
+
+<body>
+  <section class="drawer-container">
+    <div class="main-drawer-container">
+      <div class="top-message">
+        <div class="header-cancel">
+          <div class="header-text">
+            <h4>New project</h4>
+
+          </div>
+
+          <div class="close-icon">
+            <svg class="h-8 w-8 text-red-50"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="18" y1="6" x2="6" y2="18" />  <line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </div>
+        </div>
+
+        <p class="top-message-body-text">Get started by filling in the information below to create your new project.</p>
+      </div>
+
+      <div class="second-section">
+        <div class="form-container">
+          <form>
+            <label for="users-project-name">Project name</label>
+            <input class="text-input" type="text" id="users-project-name" name="project-name" placeholder="Enter your project name">
+            <br>
+
+            <label>Description</label>
+            <textarea class="text-input" id="users-project-description" name="project-description" placeholder="Enter your project description"></textarea>
+          </form>
+        </div>
+
+        <div class="add-members-container">
+          <p class="team-members-container">Team Members</p>
+
+          <div class="avatar-image-container">
+            <div class="avatar-image-container">
+              <img src="../DRAWER/drawer-images/first-avatar.avif">
+            </div>
+
+            <div class="avatar-image-container">
+              <img src="../DRAWER/drawer-images/second-avatar.avif">
+            </div>
+
+            <div class="avatar-image-container">
+              <img src="../DRAWER/drawer-images/third-avatar.avif">
+            </div>
+
+            <div class="avatar-image-container">
+              <img src="../DRAWER/drawer-images/fourth-avatar.avif">
+            </div>
+
+            <div class="avatar-image-container">
+              <img src="../DRAWER/drawer-images/fifth-avatar.avif">
+            </div>
+
+            <div class="avatar-image-container-svg">
+              <svg class="h-8 w-8 text-red-50"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="12" y1="5" x2="12" y2="19" />  <line x1="5" y1="12" x2="19" y2="12" /></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="privacy-container">
+          <p class="privacy-header">Privacy</p>
+
+          <div class="selector-form-container">
+            <form>
+              <div class="privacy-selector">
+                <input type="radio" id="public-selection" name="privacy radio selector">
+
+                <div class="privacy-body-copy">
+                  <label for="public-selection">Public access</label>
+                  <br>
+                  <p class="pp-body-copy">Everyone with the link will see this project.</p>
+                </div>
+              </div>
+
+              <div class="privacy-selector">
+                <input type="radio" id="private-selection" name="privacy radio selector">
+
+                <div class="privacy-body-copy">
+                  <label for="private-selection">Private to project members</label>
+                  <p class="pp-body-copy">Only members of this project would be able to access.</p>
+                </div>
+              </div>
+
+              <div class="privacy-selector">
+                <input type="radio" id="private-selection-two" name="privacy radio selector">
+
+                <div class="privacy-body-copy">
+                  <label for="private-selection-two">Private to you</label>
+                  <p class="pp-body-copy">You are the only one able to access this project.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <hr>
+
+          <div class="copy-link-container">
+            <div class="copy-link-main">
+              <div class="copy-link">
+                <div class="chain-icon">
+                  <svg class="h-8 w-8 text-red-50"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" /></svg>
+                </div>
+
+                <p>Copy link</p>
+              </div>
+            </div>
+
+            <div class="learn-more-container">
+              <div class="learn-more">
+                <div>
+                  <svg class="h-8 w-8 text-red-50"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+              
+                <p class="learn-more-text">Learn more about sharing</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="third-section">
+        <div class="button-container">
+          <div class="cancel-button-container">
+            <button class="cancel-button">Cancel</button>
+          </div>
+
+          <div class="save-button-container">
+            <button class="save-button">Save</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
