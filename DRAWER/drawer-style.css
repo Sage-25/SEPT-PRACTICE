@@ -65,13 +65,18 @@ label {
   color: white;
 }
 
-.text-input {
+.text-input,
+.text-area-input {
   background-color: rgb(33, 45, 63);
   border: solid 0.031rem rgb(52, 63, 77);
   padding: 0.5rem;
   border-radius: 0.5rem;
   resize: vertical;
   color: white;
+}
+
+.text-area-input {
+  height: 5rem;
 }
 
 ::placeholder {
