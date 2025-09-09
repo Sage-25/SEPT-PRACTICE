@@ -22,6 +22,7 @@ body {
   padding-block-end: 2rem;
   position: absolute;
   right: 0;
+  height: 100%;
 }
 
 .header-cancel {
