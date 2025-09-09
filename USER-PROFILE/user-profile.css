@@ -11,3 +11,133 @@ body {
   height: 100vh;
 }
 
+/* FIRST SECTION */
+.user-profile-container {
+  background-color: rgb(30, 41, 57);
+  max-width: 32rem;
+  width: 100%;
+  height: 100%;
+  padding-block: 1.5rem;
+  position: absolute;
+  right: 0;
+}
+
+.user-profile-main {
+  display: grid;
+  gap: 2rem;
+}
+
+.first-section {
+  display: grid;
+  gap: 2rem;
+}
+
+.profile-page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding-inline: 1.5rem;
+}
+
+.profile-image img {
+  display: grid;
+  align-items: center;
+  max-width: 32rem;
+  width: 100%;
+}
+
+/* SECOND SECTION */
+.second-main {
+  display: grid;
+  gap: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+.name-username-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.name-username-container p {
+  color: rgb(153, 161, 175);
+}
+
+.name-username {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name-username h1 {
+  color: white;
+}
+
+.green-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: rgb(5, 223, 114);
+  border-radius: 100%;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.more-icon-button svg {
+  color: white;
+  max-width: 1.5rem;
+  width: 100%;
+  margin-block-start: 0.15rem;
+}
+
+.message-button {
+  background-color: rgb(97, 95, 255);
+  color: white;
+  padding: 1rem 5rem;
+  border: solid 0;
+  border-radius: 0.5rem;
+}
+
+.call-button {
+  background-color: rgb(52, 63, 77);
+  color: white;
+  padding: 1rem 5rem;
+  border: solid 0;
+  border-radius: 0.5rem;
+}
+
+.more-icon-button {
+  display: grid;
+  align-items: center;
+  background-color: rgb(52, 63, 77);
+  padding: 0.8rem 0.7rem;
+  border: solid 0;
+  border-radius: 0.5rem;
+}
+
+/* THIRD SECTION */
+.third-section {
+  display: grid;
+  gap: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+.text-header {
+  color: rgb(153, 161, 175);
+}
+
+.text-body {
+  color: white;
+}
+
+.bio-section,
+.location-section,
+.website-section,
+.birthday-section {
+  display: grid;
+  gap: 0.5rem;
+}
