@@ -17,7 +17,6 @@ body {
   max-width: 32rem;
   width: 100%;
   height: 100%;
-  padding-block: 1.5rem;
   position: absolute;
   right: 0;
 }
@@ -25,6 +24,8 @@ body {
 .user-profile-main {
   display: grid;
   gap: 2rem;
+  background-color: rgb(30, 41, 57);
+  padding-block: 1.5rem;
 }
 
 .first-section {
@@ -38,6 +39,12 @@ body {
   justify-content: space-between;
   color: white;
   padding-inline: 1.5rem;
+}
+
+.cancel-icon :hover {
+  color: rgb(117, 131, 156);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .profile-image img {
@@ -102,12 +109,24 @@ body {
   border-radius: 0.5rem;
 }
 
+.message-button:hover {
+  cursor: pointer;
+  background-color: rgb(135, 133, 254);
+  transition: 0.5s;
+}
+
 .call-button {
   background-color: rgb(52, 63, 77);
   color: white;
   padding: 1rem 5rem;
   border: solid 0;
   border-radius: 0.5rem;
+}
+
+.call-button:hover {
+  cursor: pointer;
+  background-color: rgb(83, 97, 115);
+  transition: 0.5s;
 }
 
 .more-icon-button {
@@ -117,6 +136,12 @@ body {
   padding: 0.8rem 0.7rem;
   border: solid 0;
   border-radius: 0.5rem;
+}
+
+.more-icon-button:hover {
+  cursor: pointer;
+  background-color: rgb(83, 97, 115);
+  transition: 0.5s;
 }
 
 /* THIRD SECTION */
