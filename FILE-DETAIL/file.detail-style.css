@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background-color: rgb(16, 24, 40);
+  height: 100vh;
+}
+
+.file-detail-main-container {
+  display: flex;
+  /* display: grid;
+  grid-template-columns: auto 1fr; */
+  gap: 1rem;
+  /* height: 100%; */
+  position: absolute;
+  right: 0;
+}
+
+/* FIRST SECTION */
+.first-section {
+  color: rgb(153 161 175);
+  margin-block-start: 1rem;
+  position: fixed;
+  right: 31rem;
+}
+
+.first-section svg:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+/* SECOND SECTION */
+.second-section {
+  max-width: 30rem;
+  width: auto;
+  height: 100%;
+  background-color: rgb(30 41 57);
+  padding: 2rem;
+  border-left: solid 0.031rem rgb(52 63 77);
+}
+
+.file-detail-main {
+  display: grid;
+  gap: 1.5rem;
+  width: 25rem;
+  background-color: rgb(30 41 57);
+}
+
+.header-image img {
+  max-width: 25rem;
+  max-height: 18rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.image-name-heart-container {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.image-name-heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-name-heart h4 {
+  color: white;
+}
+
+.heart-icon svg {
+  color: rgb(153 161 175);
+}
+
+.heart-icon svg:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+.image-size p {
+  color: rgb(153 161 175);
+}
+
+.information-details-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.information-section {
+  color: white;
+  padding-block-end: 1rem;
+  border-bottom: solid 0.031rem rgb(52 63 77);
+}
+
+.file-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: 1rem;
+  border-bottom: solid 0.031rem rgb(52 63 77);
+}
+
+.first-details {
+  color: rgb(153 161 175);
+}
+
+.second-details {
+  color: white;
+}
+
+.description-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.description-text {
+  color: white;
+}
+
+.description-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description-header-text {
+  color: rgb(153 161 175);
+  font-style: italic;
+}
+
+.edit-icon svg {
+  color: rgb(153 161 175);
+}
+
+.edit-icon svg:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+.shared-image-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.shared-image p {
+  color: white;
+  padding-block-end: 1rem;
+  border-bottom: solid 0.031rem rgb(52 63 77);
+}
+
+.shared-image-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: 1rem;
+  border-bottom: solid 0.031rem rgb(52 63 77);
+}
+
+.shared-with-image-one img {
+  max-width: 2rem;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.shared-with-image-one {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-name-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.sharer-name {
+  color: white;
+}
+
+.anchor-tag-container a {
+  color: rgb(124 134 255);
+}
+
+.anchor-tag-container a:hover {
+  cursor: pointer;
+  color: rgb(149, 157, 252);
+  transition: 0.5s;
+}
+
+.shared-image-add:hover .anchor-tag-container {
+  cursor: pointer;
+  color: rgb(149, 157, 252);
+  transition: 0.5s;
+}
+
+.shared-image-add {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block-end: 1rem;
+  border-bottom: solid 0.031rem rgb(52 63 77);
+}
+
+.add-icon-container {
+  padding: 0.3rem 0.5rem;
+  border:dashed 0.031rem rgb(153 161 175);
+  border-radius: 100%;
+}
+
+.add-icon-container svg:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.add-icon-container svg {
+  padding-block-start: 0.085rem;
+  color: rgb(153 161 175);
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download-button {
+  background-color:  rgb(97 95 255);;
+  color: white;
+  padding: 1rem 4.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.download-button:hover {
+  cursor: pointer;
+  background-color:  rgb(124 134 255);
+  transition: 0.5s;
+}
+
+.delete-button {
+  background-color: rgb(52 63 77);
+  color: white;
+  padding: 1rem 4.5rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+  background-color:  rgb(70, 84, 103);
+  transition: 0.5s;
+}
