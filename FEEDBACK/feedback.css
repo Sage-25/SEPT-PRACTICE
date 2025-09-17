@@ -28,7 +28,7 @@ body {
 
 .first-section {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .group-icon svg {
