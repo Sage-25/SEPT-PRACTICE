@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(16, 24, 40);
+  height: 100vh;
+}
+
+.header-section {
+  color: white;
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+  border-bottom: solid 0.031rem rgb(28, 37, 56);
+}
+
+.user-details-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.calendar-image-container img {
+  max-width: 3.5rem;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.name-time-location-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.name-time-location-container h4 {
+  color: white;
+}
+
+.date-time-calendar-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(153 161 175);;
+}
+
+.horizontal-divider {
+  height: 0.8rem;
+  width: 0.1rem;
+  background-color: rgb(28, 37, 56);
+}
+
+.calendar-main-container,
+.location-main-container {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calendar-icon-container,
+.more-icon,
+.location-icon-container {
+  max-width: 1.5rem;
+  width: 100%;
+}
+
+.more-icon {
+  color: white;
+}
+
+/* CALENDAR CONSTRUCTION */
+

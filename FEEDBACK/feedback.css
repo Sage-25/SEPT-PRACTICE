@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(16, 24, 40);
+  height: 100vh;
+  margin-inline: 1rem;
+}
+
+/* FIRST SECTION */
+.feedback-container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 35rem;
+  width: 100%;
+}
+
+.first-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.group-icon svg {
+  color: rgb(106 114 130);
+  max-width: 2.5rem;
+  width: 100%;
+}
+
+.group-text-container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.group-text-container h3 {
+  color: white;
+}
+
+.group-text-container p {
+  color: rgb(153 161 175);;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+
+form input {
+  background-color: rgb(28 36 51);
+  border: none ;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+form input::placeholder {
+  color: rgb(106 114 130);
+}
+
+.send-button {
+  color: white;
+  background-color: rgb(97 95 255);
+  border: none;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+}
+
+.send-button:hover {
+  cursor: pointer;
+  background-color: rgb(128, 126, 247);
+  transition: 0.5s;
+}
+
+/* SECOND SECTION */
+.second-section-header {
+  padding-block-end: 1.5rem;
+  border-bottom: solid 0.031rem rgb(39 48 62);
+  color: rgb(153 161 175);
+  text-align: start;
+}
+
+.invite-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+  border-bottom: solid 0.031rem rgb(39 48 62);
+}
+
+.invite-image-name-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.invite-image-container img {
+  max-width: 2.5rem;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.invite-text-container {
+  display: grid;
+  text-align: start;
+  gap: 0.3rem;
+}
+
+.invite-text-container h4 {
+  color: white;
+}
+
+.invite-text-container p {
+  color: rgb(153 161 175);
+}
+
+.invite-button-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.invite-button-container:hover {
+  cursor: pointer;
+  background-color: rgb(28 36 51);
+  transition: 0.5s;
+}
+
+.plus-icon {
+  color: rgb(106 114 130);
+  margin-block-start: 0.1rem;
+}
+
+.invite-text {
+  color: white;
+}
+
+
+
+
+
+
