@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "product sans";
+  src: url(https://console.cloudinary.com/app/c-894d4535acc5353a470accad8153fe/assets/media_library/folders/ccb3baa7030823120e438a3f8337fb97f7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'product sans';
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(6 6 6);
+  height: 100vh;
+}
+
+/* HEADER SECTION */
+header {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  /* padding-inline: 2rem;
+  padding-block: 0.5rem; */
+}
+
+.left-header-container{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.left-header-main {
+  display: grid;
+  grid-template-columns: auto 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow-drop-down {
+  border: solid 0.031rem rgb(23, 24, 25);
+  text-align: center;
+  border-radius: 3rem;
+}
+
+.arrow-drop-down svg {
+  color: rgb(84, 88, 91);
+  /* padding-block-start: 0.4rem; */
+  width: 0.75rem;
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+  color: rgb(154 160 166);
+  list-style-type: none;
+}
+
+.header-button-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.build-gemini-button {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50rem;
+  color: rgb(154 160 166);
+  background-color: rgb(19, 20, 20);
+}
+
+.try-gemini-button {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50rem;
+  color: rgb(154 160 166);
+  background-color: rgb(19, 20, 20);
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50rem;
+  color: rgb(154 160 166);
+  background-color: rgb(19, 20, 20);
+}
+
+/* MAIN */
+/* FIRST SECTION CONTAINER */
+.first-section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.left-stick-container {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 37.938rem;
+}
+
+.text-navigation-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.text-container {
+  color: white;
+  font-size: 2.625rem;
+  font-weight: bold;
+}
+
+.date-model-learn-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.date-model-learn-container p {
+  color: rgb(154 160 166);
+}
+
+.inner-text-button {
+  padding: 0.5rem 1rem;
+  border: solid 0.031rem rgb(23, 24, 25);
+  background-color: rgb(6 6 6);
+  color: rgb(154 160 166);
+  border-radius: 50rem;
+}
+
+.learn-more-trigger {
+  display: grid;
+  grid-template-columns: auto 1.125rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+.learn-more-trigger:hover {
+  cursor: pointer;
+  background-color: rgb(12, 12, 12);
+  transition: 0.5s;
+}
+
+.arrow-right-container svg {
+  color: rgb(154 160 166);
+  margin-block-start: 0.4rem;
+}
+
+.image-container {
+  max-width: 28.414rem;
+  position: relative;
+}
+
+.input-container {
+  color: white;
+  font-size: 0.625rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: rgba(20, 21, 21, 0.288);
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.output-container {
+  color: white;
+  font-size: 0.625rem;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  background-color: rgba(20, 21, 21, 0.288);
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.image-main img {
+  max-width: 28.414rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* RIGHT SCROLL CONTAINER */
+.right-container-main {
+  display: flex;
+  /* grid-template-columns: auto 1fr; */
+  gap: 1.5rem;
+  align-items: start;
+  padding-block: 2.5rem;
+  border-bottom: solid 0.031rem rgb(241 243 244 / 8%);;
+}
+
+.right-image-container img {
+  max-width: 11rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.right-text-container {
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.right-header-text p {
+  max-width: 32.875rem;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
