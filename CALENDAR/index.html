@@ -237,13 +237,278 @@
             <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="15 18 9 12 15 6" /></svg>
           </div>
 
-          <div class="Month-container">
-            <h4>January</h4>
+          <div class="month-container">
+            <p>January</p>
           </div>
 
           <div class="arrow-right-container">
             <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="9 18 15 12 9 6" /></svg>
           </div>
+        </div>
+
+        <!-- <div class="calendar-implementation">
+          <div class="days-calendar">
+            <div>M</div>
+            <div>T</div>
+            <div>W</div>
+            <div>T</div>
+            <div>F</div>
+            <div>S</div>
+            <div>S</div>
+          </div> -->
+
+          <div class="days-numbers-container">
+            <div class="days-line-up-main">
+              <div class="days-of-the-week">M</div>
+              <div class="inactive-days">
+                <div class="press-active-container">27</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">3</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">10</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">17</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">24</div>
+              </div>
+              
+              <div class="active-days-bottom-left">
+                 <div class="press-active-container">31</div>
+              </div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="days-of-the-week">T</div>
+              <div class="inactive-days">
+                <div class="press-active-container">28</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">4</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">11</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">18</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">25</div>
+              </div>
+              
+              <div class="inactive-days-bottom">
+                 <div class="press-active-container">1</div>
+              </div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="days-of-the-week">W</div>
+              <div class="inactive-days">
+                <div class="press-active-container">29</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">5</div>
+              </div>
+
+              <div class="booked-active-days">
+                <div class="press-active-container">12</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">19</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">26</div>
+              </div>
+              
+              <div class="inactive-days-bottom">
+                 <div class="press-active-container">2</div>
+              </div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="days-of-the-week">T</div>
+              <div class="inactive-days">
+                <div class="press-active-container">30</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">6</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">13</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">20</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">27</div>
+              </div>
+              
+              <div class="inactive-days-bottom">
+                 <div class="press-active-container">3</div>
+              </div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="days-of-the-week">F</div>
+              <div class="inactive-days">
+                <div class="press-active-container">31</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">7</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">14</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">21</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">28</div>
+              </div>
+              
+              <div class="inactive-days-bottom">
+                 <div class="press-active-container">4</div>
+              </div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="days-of-the-week">S</div>
+              <div class="active-days">
+                <div class="press-active-container">1</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">8</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">15</div>
+              </div>
+
+              <div class="pressed-active-days">
+                <div class="press-active-container-main">22</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">29</div>
+              </div>
+
+              <div class="inactive-days-bottom">
+                 <div class="press-active-container">5</div>
+              </div>
+            </div>
+
+            <div class="days-line-up-main-double">
+              <div class="days-of-the-week">S</div>
+              <div class="active-days">
+                <div class="press-active-container">2</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">9</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">16</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">23</div>
+              </div>
+
+              <div class="active-days">
+                <div class="press-active-container">30</div>
+              </div>
+              
+              <div class="inactive-days-bottom-right">
+                 <div class="press-active-container">6</div>
+              </div>
+            </div>
+
+            <!-- <div class="days-line-up-main">
+              <div class="active-day">3</div>
+              <div class="active-day">4</div>
+              <div class="active-day">5</div>
+              <div class="active-day">6</div>
+              <div class="active-day">7</div>
+              <div class="active-day">8</div>
+              <div class="active-day">9</div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="active-day">10</div>
+              <div class="active-day">11</div>
+              <div class="active-day">12</div>
+              <div class="active-day">13</div>
+              <div class="active-day">14</div>
+              <div class="active-day">15</div>
+              <div class="active-day">16</div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="active-day">17</div>
+              <div class="active-day">18</div>
+              <div class="active-day">19</div>
+              <div class="active-day">20</div>
+              <div class="active-day">21</div>
+              <div class="active-day">22</div>
+              <div class="active-day">23</div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="active-day">24</div>
+              <div class="active-day">25</div>
+              <div class="active-day">26</div>
+              <div class="active-day">27</div>
+              <div class="active-day">28</div>
+              <div class="active-day">29</div>
+              <div class="active-day">30</div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="active-day">31</div>
+              <div class="inactive-days">1</div>
+              <div class="inactive-days">2</div>
+              <div class="inactive-days">3</div>
+              <div class="inactive-days">4</div>
+              <div class="inactive-days">5</div>
+              <div class="inactive-days">6</div>
+            </div>
+
+            <div class="days-line-up-main">
+              <div class="active-day">31</div>
+              <div class="inactive-days">1</div>
+              <div class="inactive-days">2</div>
+              <div class="inactive-days">3</div>
+              <div class="inactive-days">4</div>
+              <div class="inactive-days">5</div>
+              <div class="inactive-days">6</div>
+            </div> -->
+          </div>
+
+          <button class="add-event-button">Add event</button>
         </div>
       </div>
     </div>

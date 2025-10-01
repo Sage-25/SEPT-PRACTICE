@@ -10,10 +10,19 @@
 body {
   background-color: rgb(16, 24, 40);
   height: 100vh;
+  align-content: center;
+  justify-items: center;
+  margin-inline: 2rem;
+}
+
+section {
+  display: grid;
+  gap: 2rem;
 }
 
 .header-section {
   color: white;
+  font-weight: 500;
 }
 
 .user-details {
@@ -79,5 +88,197 @@ body {
   color: white;
 }
 
-/* CALENDAR CONSTRUCTION */
+.calendar-details-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
 
+/* CALENDAR CONSTRUCTION */
+.month-navigation-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.arrow-left-container,
+.arrow-right-container {
+  width: 1.5rem;
+  margin-block-start: 0.4rem;
+  color: rgb(106 114 130);
+}
+
+.arrow-left-container:hover,
+.arrow-right-container:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
+
+.month-container {
+  color: white;
+  text-align: center;
+}
+
+.calendar-construction-container {
+  display: grid;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+.days-calendar {
+  display: flex;
+  align-items: center;
+}
+
+.days-calendar div {
+  display: grid;
+  padding-inline: 1rem;
+  justify-content: center;
+}
+
+.days-numbers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  text-align: center;
+  border: solid 0.031rem rgb(52 58 72);
+  border-radius: 1rem;
+}
+
+.days-line-up-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: solid 0.031rem rgb(52 58 72);
+  width: 100%;
+}
+
+.inactive-days,
+.active-days,
+.booked-active-days,
+.pressed-active-days,
+.days-of-the-week {
+  display: grid;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid 0.031rem rgb(52 58 72);
+}
+
+.inactive-days:hover,
+.active-days:hover,
+.booked-active-days:hover,
+.pressed-active-days:hover,
+.inactive-days-bottom:hover,
+.active-days-bottom:hover,
+.inactive-days-bottom-right:hover,
+.active-days-bottom-left:hover {
+  cursor: pointer;
+  background-color: rgb(21, 31, 52);
+  transition: 0.5s;
+}
+
+.inactive-days-bottom,
+.active-days-bottom,
+.inactive-days-bottom-right,
+.active-days-bottom-left {
+  display: grid;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.days-of-the-week {
+  color: rgb(155 162 174);
+}
+
+.inactive-days {
+  background-color: rgb(18, 27, 45);
+  color: rgb(155 162 174);
+}
+
+.active-days {
+  color: white;
+}
+
+.booked-active-days {
+  color: rgb(97 95 255);
+}
+
+.inactive-days-bottom {
+  background-color: rgb(18, 27, 45);
+  color: rgb(155 162 174);
+}
+
+.inactive-days-bottom-right {
+  background-color: rgb(18, 27, 45);
+  color: rgb(155 162 174);
+  border-bottom-right-radius: 1rem;
+}
+
+.active-days-bottom-left {
+  color: white;
+  border-bottom-left-radius: 1rem;
+}
+
+.active-days-bottom {
+  color: white;
+}
+
+.press-active-container {
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+.press-active-container-main {
+  padding: 0.5rem;
+  background-color: white;
+  color: rgb(16, 24, 40);
+  border-radius: 100%;
+}
+
+.add-event-button {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(97 95 255);
+  color: white;
+  font-weight: 500;
+}
+
+.add-event-button:hover {
+  cursor: pointer;
+  background-color: rgb(125, 123, 253);
+  transition: 0.5s;
+}
+
+/* RESPONSIVE */
+@media (max-width:1111px) {
+   .calendar-details-container {
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .calendar-construction-container {
+    order: -1;
+  }
+
+  .calendar-container {
+    margin-block-start: 2rem;
+  }
+}
+
+@media (max-width:648px) {
+  .inactive-days,
+  .active-days,
+  .booked-active-days,
+  .pressed-active-days,
+  .days-of-the-week {
+    padding: 0.5rem 0.5rem;
+    max-width: auto;
+  }
+}
