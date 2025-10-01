@@ -277,8 +277,19 @@ section {
   .active-days,
   .booked-active-days,
   .pressed-active-days,
-  .days-of-the-week {
+  .days-of-the-week,
+  .inactive-days-bottom,
+  .active-days-bottom-left,
+  .inactive-days-bottom-right {
     padding: 0.5rem 0.5rem;
     max-width: auto;
+  }
+
+  .date-time-calendar-container {
+    grid-template-columns: none;
+  }
+
+  .horizontal-divider {
+    display: none;
   }
 }
