@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(16, 24, 40);
+  height: 100vh;
+  /* margin-inline: 2rem; */
+}
+
+.header-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgb(23 33 48);
+  border-bottom: solid 0.031rem rgb(52 58 72);
+}
+
+.year-header-text p {
+  color: white;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+}
+
+.month-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: rgb(46 56 69);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.month-header-text p {
+  font-weight: 500;
+}
+
+.chevron-left,
+.chevron-right,
+.chevron-down {
+  width: 1rem;
+  margin-block-start: 0.3rem;
+  color: rgb(153 161 175);
+}
+
+.chevron-left-container {
+  display: grid;
+  padding: 0.61rem;
+  background-color: rgb(46 56 69);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.chevron-right-container {
+  display: grid;
+  padding: 0.61rem;
+  background-color: rgb(46 56 69);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.day-header-text {
+  padding: 0.8rem 1.5rem;
+  color: white;
+  background-color: rgb(46 56 69);
+  font-weight: 500;
+}
+
+.vertical-line {
+  width: 0.1rem;
+  height: 1.5rem;
+  background-color: rgb(46 56 69);
+  border-radius: 100%;
+}
+
+.add-event-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background-color: rgb(97 95 255);
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* CALENDAR CONTAINER */
+.calendar-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  width: 100%;
+}
+
+.calendar-container-main {
+  width: 100%;
+}
+
+.day-of-the-week {
+  display: grid;
+  align-items: center;
+  padding-block: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  border-bottom: solid 0.031rem rgb(46 56 69);
+  border-right: solid 0.031rem rgb(46 56 69);
+}
+
+.days-inactive-container,
+.days-active-container {
+  /* max-width: 100%;
+  width: 11rem; */
+  height: 35%;
+  padding: 0.5rem;
+  border-right: solid 0.031rem rgb(46 56 69);
+  border-bottom: solid 0.031rem rgb(46 56 69);
+}
+
+.days-main-container {
+  color: rgb(153 161 175);
+}
+
+.activity-container {
+  display: grid;
+  gap: 0.5rem;
+  margin-block-start: 1rem;
+}
+
+.activity-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-text-title {
+  color: white;
+  font-weight: 500;
+}
+
+.activity-text-time {
+  font-weight: 500;
+}

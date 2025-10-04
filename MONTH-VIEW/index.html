@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Month-view</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <section>
+    <div class="month-view-main-container">
+      <div class="header-button-container">
+        <div class="year-header-text">
+          <p>January 2022</p>
+        </div>
+
+        <div class="button-container">
+          <div class="date-container">
+            <div class="chevron-left-container">
+              <div class="chevron-left">
+                <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="15 18 9 12 15 6" /></svg>
+              </div>
+            </div>
+
+            <div class="day-header-text">
+              <p>Today</p>
+            </div>
+
+            <div class="chevron-right-container">
+              <div class="chevron-right">
+                <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="9 18 15 12 9 6" /></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="month-container">
+            <div class="month-header-text">
+              <p>Month view</p>
+            </div>
+
+            <div class="chevron-down">
+              <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
+            </div>
+          </div>
+
+          <div class="vertical-line"></div>
+
+          <button class="add-event-button">Add event</button>
+        </div>
+      </div>
+
+      <div class="calendar-container">
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Mon</p>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>27</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <div class="days-scheduled">
+                <p>3</p>
+              </div>
+
+              <div class="activity-container">
+                <div class="activity-text">
+                  <p class="activity-text-title">Design review</p>
+                  <p class="activity-text-time">10AM</p>
+                </div>
+
+                <div class="activity-text">
+                   <p class="activity-text-title">Sales meeting</p>
+                   <p class="activity-text-time">2PM</p>
+                </div>
+              </div>
+
+              <div class="dot-container">
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>10</p>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>17</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>24</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>31</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Tue</p>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>28</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>4</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>11</p>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>18</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>25</p>
+            </div>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Wed</p>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>29</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>5</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>12</p>
+
+              <div class="activity-container">
+                <div class="activity-text">
+                  <p class="activity-text-title">Sam's birthday party</p>
+                <p class="activity-text-time">2PM</p>
+                </div>
+              </div>
+
+              <div class="dot-container">
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>19</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>26</p>
+            </div>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>2</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Thu</p>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>30</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>6</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>13</p>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>20</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>27</p>
+            </div>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>3</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Fri</p>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>31</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>7</p>
+
+              <div class="activity-container">
+                <div class="activity-text">
+                  <p class="activity-text-title">Date night</p>
+                <p class="activity-text-time">6PM</p>
+                </div>
+              </div>
+
+              <div class="dot-container">
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>14</p>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>21</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>28</p>
+            </div>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>4</p>
+
+              <div class="activity-container">
+                <div class="activity-text">
+                  <p class="activity-text-title">Cinema with friends</p>
+                  <p class="activity-text-time">9PM</p>
+                </div>
+              </div>
+
+              <div class="dot-container">
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Sat</p>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>1</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>8</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>15</p>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>22</p>
+
+              <div class="activity-container">
+                <div class="activity-text">
+                  <p class="activity-text-title">Maple syrup muse</p>
+                  <p class="activity-text-time">3AM</p>
+                </div>
+
+                <div class="activity-text">
+                   <p class="activity-text-title">Hockey game</p>
+                   <p class="activity-text-time">7PM</p>
+                </div>
+              </div>
+
+              <div class="dot-container">
+                <div class="dot-indicator"></div>
+                <div class="dot-indicator"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>29</p>
+            </div>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="calendar-container-main">
+          <div class="day-of-the-week">
+            <p>Sun</p>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>2</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>9</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>16</p>
+            </div>
+          </div>
+          
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>23</p>
+            </div>
+          </div>
+
+          <div class="days-active-container">
+            <div class="days-main-container">
+              <p>30</p>
+            </div>
+          </div>
+
+          <div class="days-inactive-container">
+            <div class="days-main-container">
+              <p>6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
