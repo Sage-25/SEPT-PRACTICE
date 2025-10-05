@@ -13,6 +13,8 @@ body {
   /* margin-inline: 2rem; */
 }
 
+
+/* HEADER CONTAINER */
 .header-button-container {
   display: flex;
   align-items: center;
@@ -100,12 +102,67 @@ body {
   font-size: 1rem;
 }
 
+.more-dropdown-container {
+  display:;
+}
+
+.more-icon {
+  width: 1.5rem;
+  color: rgb(153 161 175);
+}
+
+.more-dropdown {
+  display:;
+
+}
+
+.more-dropdown-main {
+  ds
+}
+
+.header-responsive-view-main {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.arrow-left-right-main-container {
+  background-color: rgb(46 56 69);
+  padding: 0.38rem 1rem;
+  border-radius: 0.5rem;
+  border: solid 0.031rem rgb(53, 65, 80);
+}
+
+.arrow-left-right-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.responsive-left-container,
+.responsive-right-container {
+  width: 1.5rem;
+  color: rgb(153 161 175);
+  margin-block-start: 0.2rem;
+}
+
+.vertical-line-arrow-container {
+  width: 0.1rem;
+  height: 1.5rem;
+  background-color: rgb(58, 71, 88);
+  border-radius: 100%;
+}
+
 /* CALENDAR CONTAINER */
 .calendar-container {
+  display: flex;
+}
+
+/* .calendar-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
   width: 100%;
-}
+} */
 
 .calendar-container-main {
   width: 100%;
@@ -126,13 +183,17 @@ body {
 .days-active-container {
   /* max-width: 100%;
   width: 11rem; */
-  height: 35%;
+  height: 30%;
   padding: 0.5rem;
   border-right: solid 0.031rem rgb(46 56 69);
   border-bottom: solid 0.031rem rgb(46 56 69);
 }
 
-.days-main-container {
+.days-inactive-container {
+  background-color: rgb(23 33 49);
+}
+
+.days-of-the-week-text {
   color: rgb(153 161 175);
 }
 
@@ -142,6 +203,11 @@ body {
   margin-block-start: 1rem;
 }
 
+.activity-container:hover {
+  cursor: pointer;
+  color: rgb(97 95 255);
+}
+
 .activity-text {
   display: flex;
   align-items: center;
@@ -149,10 +215,128 @@ body {
 }
 
 .activity-text-title {
+  text-overflow: ellipsis;
+  /* white-space: nowrap;
+  overflow: hidden; */
   color: white;
   font-weight: 500;
 }
 
+/* .activity-text-title:hover {
+  cursor: pointer;
+  color: rgb(97 95 255);
+} */
+
 .activity-text-time {
+  color: rgb(153 161 175);
   font-weight: 500;
+}
+
+.selected-date {
+  padding: 0.3rem 0.4rem;
+  background-color: rgb(97 95 255);
+  border-radius: 50rem;
+  width: fit-content;
+  color: white;
+}
+
+/* BOTTOM CONTAINER */
+.event-bottom-container {
+  display: none;
+  background-color: rgb(23 33 49);
+  border: solid 0.031rem rgb(46 56 69);
+  border-radius: 1rem;
+  margin-inline: 2rem;
+  margin-block-start: 24rem;
+}
+
+.time-container {
+  width: 1.3rem;
+  margin-block-start: 0.2rem;
+}
+
+.maple-syrup-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.calendar-header-title {
+  color: white;
+  font-weight: 500;
+}
+
+.time-main-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(153 161 175);
+}
+
+hr {
+  border: solid 0.031rem rgb(46 56 69);
+}
+
+.edit-button {
+  display: none;
+  padding: 0.5rem;
+  background-color: rgb(46 56 69);
+  color: white;
+  border: solid 0.031rem rgb(53, 65, 80);
+  border-radius: 0.5rem;
+}
+
+/* RESPONSIVE VIEW MEDIA */
+@media (max-width:1230px) {
+  .days-main-container {
+    text-align: end;
+  }
+
+  .days-active-container,
+  .days-inactive-container {
+    height: 25%;
+  }
+
+  .activity-container {
+    display: none;
+  }
+
+  .dot-container {
+    display: flex;
+    gap: 0.2rem;
+    align-items: end;
+  }
+
+  .dot-indicator {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(153 161 175);
+    border-radius: 50rem;
+  }
+
+  .selected-date {
+    padding: 0rem 0rem;
+    background-color: transparent;
+    border-radius: 0rem;
+    width: auto;
+    color: rgb(97 95 255);
+  }
+
+  .days-main-container {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .event-bottom-container {
+    display: block;
+    margin-block-start: 16rem;
+  }
+
+  .days-active-container:hover,
+  .days-inactive-container:hover {
+    cursor: pointer;
+    background-color: rgb(26, 36, 55);
+  }
 }
