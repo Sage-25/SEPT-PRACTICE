@@ -15,37 +15,61 @@
         </div>
 
         <div class="button-container">
-          <div class="date-container">
-            <div class="chevron-left-container">
-              <div class="chevron-left">
-                <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="15 18 9 12 15 6" /></svg>
+          <div class="web-view-container">
+            <div class="date-container">
+              <div class="chevron-left-container">
+                <div class="chevron-left">
+                  <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="15 18 9 12 15 6" /></svg>
+                </div>
+              </div>
+
+              <div class="day-header-text">
+                <p>Today</p>
+              </div>
+
+              <div class="chevron-right-container">
+                <div class="chevron-right">
+                  <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="9 18 15 12 9 6" /></svg>
+                </div>
               </div>
             </div>
 
-            <div class="day-header-text">
-              <p>Today</p>
-            </div>
+            <div class="month-container-main">
+              <div class="month-container">
+                <div class="month-header-text">
+                  <p>Month view</p>
+                </div>
 
-            <div class="chevron-right-container">
-              <div class="chevron-right">
-                <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="9 18 15 12 9 6" /></svg>
+                <div class="chevron-down">
+                  <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
+                </div>
+              </div>
+
+              <div class="month-dropdown-main">
+                <div class="month-dropdown">
+                  <div class="dropdown-action-trigger">
+                    <p>Day view</p>
+                  </div>
+
+                  <div class="dropdown-action-trigger">
+                    <p>Week view</p>
+                  </div>
+
+                  <div class="dropdown-action-trigger">
+                    <p>Month view</p>
+                  </div>
+
+                  <div class="dropdown-action-trigger">
+                    <p>Year view</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="vertical-line"></div>
+
+            <button class="add-event-button">Add event</button>
           </div>
-
-          <div class="month-container">
-            <div class="month-header-text">
-              <p>Month view</p>
-            </div>
-
-            <div class="chevron-down">
-              <svg class="h-8 w-8 text-red-50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polyline points="6 9 12 15 18 9" /></svg>
-            </div>
-          </div>
-
-          <div class="vertical-line"></div>
-
-          <button class="add-event-button">Add event</button>
 
           <div class="header-responsive-view-container">
             <div class="header-responsive-view-main">
@@ -70,19 +94,34 @@
 
                 <div class="more-dropdown">
                   <div class="more-dropdown-main">
-                    <div class="create-event-container">
+                    <div class="dropdown-action-trigger">
                       <p>Create event</p>
                     </div>
 
-                    <div class="go-to-today-container">
+                    <hr class="dropdown-divider">
+
+                    <div class="dropdown-action-trigger">
                       <p>Go to today</p>
                     </div>
 
+                    <hr class="dropdown-divider">
+
                     <div class="days-month-selection-container">
-                      <p>Day view</p>
-                      <p>Week view</p>
-                      <p>Month view</p>
-                      <p>Year view</p>
+                      <div class="dropdown-action-trigger">
+                        <p>Day view</p>
+                      </div>
+
+                      <div class="dropdown-action-trigger">
+                        <p>Week view</p>
+                      </div>
+
+                      <div class="dropdown-action-trigger">
+                        <p>Month view</p>
+                      </div>
+
+                      <div class="dropdown-action-trigger">
+                        <p>Year view</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -461,7 +500,7 @@
 
       <div class="event-bottom-container">
         <div class="maple-syrup-container">
-          <div>
+          <div class="maple-syrup-main">
             <p class="calendar-header-title">Maple syrup museum</p>
 
             <div class="time-main-container">
@@ -484,8 +523,8 @@
 
         <hr>
 
-        <div class="maple-syrup-container">
-          <div>
+        <div class="maple-syrup-container-bottom">
+          <div class="maple-syrup-main">
             <p class="calendar-header-title">Hockey game</p>
 
             <div class="time-main-container">

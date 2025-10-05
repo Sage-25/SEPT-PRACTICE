@@ -29,7 +29,7 @@ body {
   font-weight: 500;
 }
 
-.button-container {
+.web-view-container {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -50,8 +50,22 @@ body {
   border-radius: 0.5rem;
 }
 
+.month-container:hover {
+  cursor: pointer;
+  background-color: rgb(62, 74, 90);
+  transition: 0.5s;
+}
+
+.month-container:hover .chevron-down {
+  color: white;
+}
+
 .month-header-text p {
   font-weight: 500;
+}
+
+.month-container-main {
+  position: relative;
 }
 
 .chevron-left,
@@ -78,11 +92,29 @@ body {
   border-bottom-right-radius: 0.5rem;
 }
 
+.chevron-left-container:hover,
+.chevron-right-container:hover {
+  cursor: pointer;
+  background-color: rgb(62, 74, 90);
+  transition: 0.5s;
+}
+
+.chevron-left-container:hover .chevron-left,
+.chevron-right-container:hover .chevron-right {
+  color: white;
+}
+
 .day-header-text {
   padding: 0.8rem 1.5rem;
   color: white;
   background-color: rgb(46 56 69);
   font-weight: 500;
+}
+
+.day-header-text:hover {
+  cursor: pointer;
+  background-color: rgb(62, 74, 90);
+  transition: 0.5s;
 }
 
 .vertical-line {
@@ -102,8 +134,41 @@ body {
   font-size: 1rem;
 }
 
-.more-dropdown-container {
-  display:;
+.add-event-button:hover {
+  cursor: pointer;
+  background-color: rgb(120, 118, 252);
+  transition: 0.5s;
+}
+
+/* MONTH VIEW DROPDOWN */
+.month-dropdown-main {
+  display: none;
+  position: absolute;
+  top: 2.8rem;
+}
+
+.month-dropdown {
+  display: grid;
+  background-color: rgb(23 33 49);
+  border: solid 0.031rem rgb(46 56 69);
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  width: 9rem;
+}
+
+.month-container-main:hover .month-dropdown-main {
+  display: block;
+}
+
+/* .month-container-main:hover .chevron-down {
+  transform: rotate(180deg);
+  transition: 0.5s;
+  margin-block-start: 0;
+} */
+
+/* .RESONSIVE BUTTONS TRIGGER */
+.header-responsive-view-container {
+  display: none;
 }
 
 .more-icon {
@@ -111,13 +176,54 @@ body {
   color: rgb(153 161 175);
 }
 
-.more-dropdown {
-  display:;
+.more-icon:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
+}
 
+.more-dropdown {
+  display: none;
+}
+
+.more-drop-down-container {
+  position: relative;
+}
+
+.more-dropdown-container:hover .more-dropdown {
+  cursor: pointer;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
 }
 
 .more-dropdown-main {
-  ds
+  display: grid;
+  gap: 0.5rem;
+  background-color: rgb(23 33 49);
+  border: solid 0.031rem rgb(46 56 69);
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+  width: 9rem;
+}
+
+.dropdown-action-trigger {
+  padding: 0.5rem 0.7rem;
+  color: rgb(209 213 220);
+}
+
+.dropdown-action-trigger:hover {
+  cursor: pointer;
+  background-color: rgb(29, 41, 61);
+  color: white;
+  transition: 0.5s;
+}
+
+.days-month-selection-container {
+  display: grid;
+  /* gap: 0.5rem; */
 }
 
 .header-responsive-view-main {
@@ -144,6 +250,13 @@ body {
   width: 1.5rem;
   color: rgb(153 161 175);
   margin-block-start: 0.2rem;
+}
+
+.responsive-left-container:hover,
+.responsive-right-container:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.5s;
 }
 
 .vertical-line-arrow-container {
@@ -212,12 +325,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .activity-text-title {
   text-overflow: ellipsis;
-  /* white-space: nowrap;
-  overflow: hidden; */
+  white-space: nowrap;
+  overflow: hidden;
   color: white;
   font-weight: 500;
 }
@@ -255,12 +369,17 @@ body {
   margin-block-start: 0.2rem;
 }
 
-.maple-syrup-container {
+.maple-syrup-container,
+.maple-syrup-container-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
   padding: 1rem;
+}
+
+.maple-syrup-main {
+  display: grid;
+  gap: 0.5rem;
 }
 
 .calendar-header-title {
@@ -286,6 +405,13 @@ hr {
   color: white;
   border: solid 0.031rem rgb(53, 65, 80);
   border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.edit-button:hover {
+  cursor: pointer;
+  background-color: rgb(37, 45, 55);
+  transition: 0.5s;
 }
 
 /* RESPONSIVE VIEW MEDIA */
@@ -338,5 +464,38 @@ hr {
   .days-inactive-container:hover {
     cursor: pointer;
     background-color: rgb(26, 36, 55);
+    transition: 0.5ms;
+  }
+
+  .maple-syrup-container:hover {
+    cursor: pointer;
+    background-color: rgb(29, 40, 58);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    transition: 0.5s;
+  }
+
+  .maple-syrup-container-bottom:hover {
+    cursor: pointer;
+    background-color: rgb(29, 40, 58);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    transition: 0.5s;
+  }
+
+  .maple-syrup-container:hover .edit-button,
+  .maple-syrup-container-bottom:hover .edit-button {
+    display: block;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width:800px) {
+  .header-responsive-view-container {
+    display: block;
+  }
+
+  .web-view-container {
+    display: none;
   }
 }
