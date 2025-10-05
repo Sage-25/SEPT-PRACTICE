@@ -329,17 +329,9 @@ body {
 }
 
 .activity-text-title {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   color: white;
   font-weight: 500;
 }
-
-/* .activity-text-title:hover {
-  cursor: pointer;
-  color: rgb(97 95 255);
-} */
 
 .activity-text-time {
   color: rgb(153 161 175);
@@ -415,6 +407,15 @@ hr {
 }
 
 /* RESPONSIVE VIEW MEDIA */
+@media (max-width:1500px) {
+  .activity-text-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 8rem;
+  }
+}
+
 @media (max-width:1230px) {
   .days-main-container {
     text-align: end;
@@ -487,6 +488,21 @@ hr {
   .maple-syrup-container-bottom:hover .edit-button {
     display: block;
     transition: 0.5s;
+  }
+
+  .selected-date-third-half {
+    justify-items: end;
+  }
+
+  .selected-date-third-half-main {
+    padding: 0.3rem;
+    background-color: white;
+    width: fit-content;
+    border-radius: 50%;
+  }
+
+  .selected-date-third-half-main p {
+    color:rgb(16, 24, 40);;
   }
 }
 
